@@ -20,37 +20,37 @@
           </div>
         </div>
         <div class="display">
-          <div class="display-number"></div>
+          <div id="display-number"></div>
         </div>
         <div class="container-number">
           <ul>
             <div class="row-1">
-              <li><button id="7">7</button></li>
-              <li><button id="8">8</button></li>
-              <li><button id="9">9</button></li>
-              <li><button id="del">DEL</button></li>
+              <li><button id="7" onclick="insert('7')">7</button></li>
+              <li><button id="8" onclick="insert('8')">8</button></li>
+              <li><button id="9" onclick="insert('9')">9</button></li>
+              <li><button id="del" onclick="del()">DEL</button></li>
             </div>
             <div class="row-2">
-              <li><button id="4">4</button></li>
-              <li><button id="5">5</button></li>
-              <li><button id="6">7</button></li>
-              <li><button id="+">+</button></li>
+              <li><button id="4" onclick="insert('4')">4</button></li>
+              <li><button id="5" onclick="insert('5')">5</button></li>
+              <li><button id="6" onclick="insert('6')">6</button></li>
+              <li><button id="+" onclick="insert('+')">+</button></li>
             </div>
             <div class="row-3">
-              <li><button id="1">1</button></li>
-              <li><button id="2">2</button></li>
-              <li><button id="3">3</button></li>
-              <li><button id="-">-</button></li>
+              <li><button id="1" onclick="insert('1')">1</button></li>
+              <li><button id="2" onclick="insert('2')">2</button></li>
+              <li><button id="3" onclick="insert('3')">3</button></li>
+              <li><button id="-" onclick="insert('-')">-</button></li>
             </div>
             <div class="row-4">
-              <li><button id=".">.</button></li>
-              <li><button id="0">0</button></li>
-              <li><button id="/">/</button></li>
-              <li><button id="x">x</button></li>
+              <li><button id="." onclick="insert('.')">.</button></li>
+              <li><button id="0" onclick="insert('0')">0</button></li>
+              <li><button id="/" onclick="insert('/')">/</button></li>
+              <li><button id="x" onclick="insert('*')">x</button></li>
             </div>
             <div class="row-5">
-              <li><button id="reset">RESET</button></li>
-              <li><button id="igual">=</button></li>
+              <li><button id="reset" onclick="clean()">RESET</button></li>
+              <li><button id="igual" onclick="calcular()">=</button></li>
             </div>
           </ul>
         </div>
